@@ -1,0 +1,5 @@
+// Remove interface
+sudo ifconfig vboxnet0 down && sudo ifconfig vboxnet0 up
+
+// Create VM
+docker-machine create --driver virtualbox --virtualbox-boot2docker-url /home/daniel/Downloads/boot2docker.iso myvm1
